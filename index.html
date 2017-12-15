@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8">
+    
+<meta name="author" content="Aaron Harris">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="index.css">
+    
+<script src="index.js"></script>
+    
+<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    
+<script src="jquery-3.2.1.min.js"></script>
+    
+</head>
+    
+<body>
+    
+<!--Music-->
+    
+   <embed src="Prelude%20-%20Final%20Fantasy%20VII%20Music%20Extended.mp3" autostart="true" style="display: none;">
+    
+    <div id="wrapper">
+        <div id="mainconsole">
+
+            <div id="leftdiv">
+                <image id="avatar" src="saanen.jpg"></image>
+                <p style="margin: 0;">Aaron <br>LV 0
+
+                <br>HP &nbsp;10<span style="font-size: 50%">/</span> 10
+                    <br>MP 10<span style="font-size: 50%">/</span> 10</p>
+
+                <p style="padding-top: 10px; margin:0;">
+                Days: <span style="padding-left: 77px;"> 0 </span>
+                <br> Rank:<image id="rank" src="Ranks/Ico_rank01.gif"></image>
+                </p>
+                <div id="statpanel">
+                    <table id="stats">
+
+                        <tr>
+                            <td>STR: 0</td>
+                            <td>DEX: 0</td>
+                        </tr>
+                        <tr>
+                            <td>INT: 0</td>
+                            <td>MND: 0</td>
+                        </tr>
+                        <tr>
+                            <td>WILL: 0</td>
+                            <td>PROF: 0</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+
+           
+
+            <div id="rightdiv">
+
+                 <div id="clockbox"></div>
+                
+                <p style="margin: 0;"> EXP: 0</p>
+                <div id="myLevel">
+                    <div id="levelBar"></div>
+                </div>
+            </div>
+
+            <div id="menudiv">
+                <table id="menu">
+                    <tr>
+                        <td><button class="menuBtn" id ="dailyBtn" onclick="openDaily();">Daily</button></td>
+                        <td><button class="menuBtn">Journal</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="menuBtn">Goals</button></td>
+                        <td><button class="menuBtn">To Do</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="menuBtn">Timeline</button></td>
+                        <td><button class="menuBtn">Finances</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="menuBtn">TBD</button></td>
+                        <td><button class="menuBtn">Trophies</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            </div>
+        
+        <div id="dailyconsole">
+            <button class="backBtn" onclick="goBack();"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
+        </div>
+        </div>
+    
+        
+</body>
+    
+</html>
