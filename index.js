@@ -19,17 +19,30 @@ window.onload=function(){
     GetClock();
     setInterval(GetClock,1000);
     
+    var statFile = "stats.txt"
+    
+    var file = new File(statFile);
+    
+    var statTable = document.getElementById("stats");
+    
+    for(var x = 0; x < 3; x++)
+        { 
+        for(var y = 0; y < 2; y++) {
+            statTable.rows[x].cells[y].innerHTML = file.readln();
+        }
+    }
+    file.close();
+    alert("Load Succesful");
 }
 
-function openDaily(){
-    document.getElementById("mainconsole").style.display = "none";
+function openConsole(consoleName){
+    document.getElementById("main_console").style.display = "none";
     
-    document.getElementById("dailyconsole").style.display = "block";
+    document.getElementById(consoleName).style.display = "block";
 }
 
-function goBack(){
-    document.getElementById("mainconsole").style.display = "block";
+function goBack(consoleName){
+    document.getElementById("main_console").style.display = "block";
     
-    document.getElementById("dailyconsole").style.display = "none";
-
+    document.getElementById(consoleName).style.display = "none";
 }

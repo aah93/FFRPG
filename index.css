@@ -25,13 +25,61 @@
         background: linear-gradient(bottom right, blue, black);
     }
     
-    #mainconsole 
+    #main_console 
     {
-        padding: 0px .5em .4em .5em;   
+        padding: 0px .5em .4em .5em; 
         display: block;
     }
 
-    #dailyconsole
+    #daily_console
+    {
+        display: none;
+        height: 100%;
+        width 100%;
+    }
+
+    #journal_console
+    {
+        display: none;
+        height: 100%;
+        width 100%;
+    }
+
+    #journal{
+        background-color: transparent;
+        color: white;
+        display: table;
+        margin: 0 auto;
+        font-family: "Verdana";
+        padding: 10px;
+    }
+
+    #jbuttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: .4em;
+    }
+
+    .jBtn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-family: "Verdana";
+        margin: 0px 30px 0px 30px;
+        font-size: 50%;
+    }
+
+    #goals_console
+    {
+        display: none;
+        height: 100%;
+        width 100%;   
+    }
+
+    #todo_console
+
     {
         display: none;
         height: 100%;
@@ -63,7 +111,9 @@
     }
 
     #clockbox {
-        display: inline;
+        display: table;
+        margin: auto;
+        padding-bottom: .25em;
     }
 
     #leftdiv
@@ -98,6 +148,7 @@
 
     #menu {
         width: 100%;
+        padding-bottom: .3em;
     }
 
     .menuBtn {
@@ -155,6 +206,7 @@
         display: table;
         width: 100%;
         background: red;
+        margin-bottom: .25em;
     }
 
     #levelBar {
