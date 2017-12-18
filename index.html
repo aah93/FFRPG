@@ -3,31 +3,31 @@
 <html lang="en">
 
 <head>
-    
-<meta charset="utf-8">
-    
-<meta name="author" content="Aaron Harris">
-    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<link rel="stylesheet" href="index.css">
-    
-<script src="index.js"></script>
-    
-<!--<script src="save_load.js"></script>-->
-    
-<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-    
-<script src="jquery-3.2.1.min.js"></script>
-    
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Aaron Harris">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js"></script>
+
+    <!--<script src="save_load.js"></script>-->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+    <script src="jquery-3.2.1.min.js"></script>
+
 </head>
-    
+
 <body>
-    
-<!--Music-->
-    
-   <embed src="Prelude%20-%20Final%20Fantasy%20VII%20Music%20Extended.mp3" autostart="true" style="display: none;">
-    
+
+    <!--Music-->
+
+    <embed src="Prelude%20-%20Final%20Fantasy%20VII%20Music%20Extended.mp3" autostart="true" style="display: none;">
+
     <div id="wrapper">
         <div id="main_console">
 
@@ -35,11 +35,12 @@
                 <image id="avatar" src="saanen.jpg"></image>
                 <p style="margin: 0;">Aaron <br>LV 0
 
-                <br>HP &nbsp;10<span style="font-size: 50%">/</span> 10
+                    <br>HP &nbsp;10<span style="font-size: 50%">/</span> 10
                     <br>MP 10<span style="font-size: 50%">/</span> 10</p>
 
                 <p style="margin:0; padding-top: .3em; padding-bottom: .3em">
-                    Rank:<image id="rank" src="Ranks/Ico_rank01.gif"></image>
+                    Rank:
+                    <image id="rank" src="Ranks/Ico_rank01.gif"></image>
                 </p>
                 <div id="statpanel">
                     <table id="stats">
@@ -60,16 +61,16 @@
                     </table>
                 </div>
             </div>
-           
+
 
             <div id="rightdiv">
 
                 <div id="clockbox"></div>
-                
+
                 <p style="margin: 0 0 0 .1em; display: inline-block; font-size: 35px; float: left;"> EXP: 0</p>
-                
+
                 <p style="margin: 0 2.6em 0 0; display: inline-block; float:right; font-size: 35px;"> NEXT: 20</p>
-                
+
                 <div id="myLevel">
                     <div id="levelBar"></div>
                 </div>
@@ -78,12 +79,12 @@
             <div id="menudiv">
                 <table id="menu">
                     <tr>
-                        <td><button class="menuBtn" id ="dailyBtn" onclick="openConsole('daily_console');">Daily</button></td>
-                        <td><button class="menuBtn" id ="journalBtn" onclick="openConsole('journal_console');">Journal</button></td>
+                        <td><button class="menuBtn" id="dailyBtn" onclick="openConsole('daily_console');">Daily</button></td>
+                        <td><button class="menuBtn" id="journalBtn" onclick="openConsole('journal_console');">Journal</button></td>
                     </tr>
                     <tr>
-                        <td><button class="menuBtn" id ="goalsBtn" onclick="openConsole('goals_console');">Goals</button></td>
-                        <td><button class="menuBtn" id ="todoBtn" onclick="openConsole('todo_console');">To Do</button></td>
+                        <td><button class="menuBtn" id="goalsBtn" onclick="openConsole('goals_console');">Goals</button></td>
+                        <td><button class="menuBtn" id="todoBtn" onclick="openConsole('todo_console');">To Do</button></td>
                     </tr>
                     <tr>
                         <td><button class="menuBtn">Timeline</button></td>
@@ -96,11 +97,11 @@
                 </table>
             </div>
 
-            </div>
-        
+        </div>
+
         <div id="daily_console">
             <button class="backBtn" onclick="goBack('daily_console');"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
-            
+
             <table>
                 <tr>
                     <td><button class="dailyBtn">Btn1</button></td>
@@ -115,32 +116,42 @@
                     <td><button class="dailyBtn">Btn6</button></td>
                 </tr>
             </table>
-            
+
         </div>
-        
+
         <div id="journal_console">
             <button class="backBtn" onclick="goBack('journal_console');"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
-            
+
             <div>
                 <div id=titlebox></div>
                 <textarea id="journal" rows=17 cols=40></textarea>
                 <div id="jbuttons">
                     <button class="jBtn">Save</button>
                     <button class="jBtn">Load</button>
-                </div>    
+                </div>
             </div>
         </div>
-        
+
         <div id="goals_console">
             <button class="backBtn" onclick="goBack('goals_console');"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
+            <div>
+                <textarea id="goal_list" rows=29 cols=25></textarea>
+                <textarea id="goal_view" rows=22 cols=33></textarea>
+                
+                <button class="gBtn"><i class="fas fa-times" style ="color: red;"></i></button>
+                
+                <button class="gBtn"><i class="fas fa-check" style="color: green;"></i></button>
+                
+                <button class="gBtn"><i class="fas fa-plus" style="color: white;"></i></button>
+            </div>
         </div>
-        
+
         <div id="todo_console">
             <button class="backBtn" onclick="goBack('todo_console');"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
         </div>
     </div>
-    
-        
+
+
 </body>
-    
+
 </html>
