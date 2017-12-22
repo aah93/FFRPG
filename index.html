@@ -11,14 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="index.js"></script>
 
-    <!--<script src="save_load.js"></script>-->
+    <script src="audio.js"></script>
+<!--    <script src=></script>-->
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-
-    <script src="jquery-3.2.1.min.js"></script>
 
 </head>
 
@@ -26,14 +27,34 @@
 
     <!--Music-->
 
-    <embed src="Prelude%20-%20Final%20Fantasy%20VII%20Music%20Extended.mp3" autostart="true" style="display: none;">
+    <embed src="FF7loop.mp3" autostart="true" style="display: none;">
+    
+    <audio preload="auto" id="Ready">
+        <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Ready.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio preload="auto" id="Move">
+        <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Move.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio preload="auto" id="Back" type="audio/mpeg">
+        <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Back.mp3">
+    </audio>
+    
+    <audio preload="auto" id="Error">
+        <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Error.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio preload="auto" id="SaveNLoad">
+        <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Save%20and%20Load.mp3" type="audio/mpeg">
+    </audio>
 
     <div id="wrapper">
         <div id="main_console">
 
             <div id="leftdiv">
                 <image id="avatar" src="saanen.jpg"></image>
-                <p style="margin: 0;">Aaron <br>LV 0
+                <p style="margin: 0; line-height:.8em;">Aaron <br>LV 0
 
                     <br>HP &nbsp;10<span style="font-size: 50%">/</span> 10
                     <br>MP 10<span style="font-size: 50%">/</span> 10</p>
@@ -102,18 +123,18 @@
         <div id="daily_console">
             <button class="backBtn" onclick="goBack('daily_console');"><i class="fas fa-caret-left" style="font-size: 40px; color: white;"></i></button>
 
-            <table>
+            <table id="daily_table">
                 <tr>
-                    <td><button class="dailyBtn">Btn1</button></td>
-                    <td><button class="dailyBtn">Btn2</button></td>
+                    <td><button class="dailyBtn">Daily 1</button></td>
+                    <td><button class="dailyBtn">Daily 2</button></td>
                 </tr>
                 <tr>
-                    <td><button class="dailyBtn">Btn3</button></td>
-                    <td><button class="dailyBtn">Btn4</button></td>
+                    <td><button class="dailyBtn">Daily 3</button></td>
+                    <td><button class="dailyBtn">Daily 4</button></td>
                 </tr>
                 <tr>
-                    <td><button class="dailyBtn">Btn5</button></td>
-                    <td><button class="dailyBtn">Btn6</button></td>
+                    <td><button class="dailyBtn">Daily 5</button></td>
+                    <td><button class="dailyBtn">Daily 6</button></td>
                 </tr>
             </table>
 

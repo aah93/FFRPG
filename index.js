@@ -55,20 +55,18 @@ window.onload = function () {
 }
 
 function openConsole(consoleName) {
-    selectmp3.play();
     
     document.getElementById("main_console").style.display = "none";
 
     document.getElementById(consoleName).style.display = "block";
     
-    
 }
 
 function goBack(consoleName) {
-    backmp3.play();
     document.getElementById("main_console").style.display = "block";
 
     document.getElementById(consoleName).style.display = "none";
     
     
 }
+
