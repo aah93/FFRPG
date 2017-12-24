@@ -63,10 +63,10 @@ function openConsole(consoleName) {
 }
 
 function goBack(consoleName) {
+    
     document.getElementById("main_console").style.display = "block";
 
     document.getElementById(consoleName).style.display = "none";
-    
     
 }
 

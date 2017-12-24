@@ -11,13 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css">
-    
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="index.js"></script>
 
     <script src="audio.js"></script>
-<!--    <script src=></script>-->
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
@@ -27,24 +26,22 @@
 
     <!--Music-->
 
-    <embed src="FF7loop.mp3" autostart="true" style="display: none;">
-    
     <audio preload="auto" id="Ready">
         <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Ready.mp3" type="audio/mpeg">
     </audio>
-    
+
     <audio preload="auto" id="Move">
         <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Move.mp3" type="audio/mpeg">
     </audio>
-    
+
     <audio preload="auto" id="Back" type="audio/mpeg">
         <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Back.mp3">
     </audio>
-    
+
     <audio preload="auto" id="Error">
         <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Cursor%20Error.mp3" type="audio/mpeg">
     </audio>
-    
+
     <audio preload="auto" id="SaveNLoad">
         <source src="Sounds/Final%20Fantasy%20VII%20Sound%20Effects%20-%20Save%20and%20Load.mp3" type="audio/mpeg">
     </audio>
@@ -53,13 +50,13 @@
         <div id="main_console">
 
             <div id="leftdiv">
-                <image id="avatar" src="saanen.jpg"></image>
+                <image id="avatar" src="saanen.jpg" style="height: 160px; width: 160px;"></image>
                 <p style="margin: 0; line-height:.8em;">Aaron <br>LV 0
 
                     <br>HP &nbsp;10<span style="font-size: 50%">/</span> 10
                     <br>MP 10<span style="font-size: 50%">/</span> 10</p>
 
-                <p style="margin:0; padding-top: .3em; padding-bottom: .3em">
+                <p style="margin: 30px 0 30px 0;">
                     Rank:
                     <image id="rank" src="Ranks/Ico_rank01.gif"></image>
                 </p>
@@ -116,7 +113,15 @@
                         <td><button class="menuBtn">Trophies</button></td>
                     </tr>
                 </table>
+
+                <button type="submit" class="settingBtn"><i class="fa fa-wrench" aria-hidden="true" style="border: none; background-color: transparent"></i></button>
+                
+                <button type="submit" class="settingBtn" onclick="muteBGM()"><i class="fas fa-music" aria_hidden="true"></i></button>
+
+                <button type="submit" class="settingBtn"><i class="fa fa-refresh" aria-hidden="true" ></i></button>
+    
             </div>
+
 
         </div>
 
@@ -158,11 +163,11 @@
             <div>
                 <textarea id="goal_list" rows=29 cols=25></textarea>
                 <textarea id="goal_view" rows=22 cols=33></textarea>
-                
+
                 <button class="gBtn"><i class="fas fa-times" style ="color: red;"></i></button>
-                
+
                 <button class="gBtn"><i class="fas fa-check" style="color: green;"></i></button>
-                
+
                 <button class="gBtn"><i class="fas fa-plus" style="color: white;"></i></button>
             </div>
         </div>
